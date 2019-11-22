@@ -63,6 +63,8 @@ build_args+="-DLibSel4PlatSupportUseDebugPutChar=OFF "
 build_args+="-DSel4testAllowSettingsOverride=True "
 build_args+="-DCMAKE_BUILD_TYPE=Debug "
 build_args+="-DRELEASE=False "
+build_args+="-DBAMBOO=ON "
+build_args+="-DLibSel4TestPrintXML=ON "
 if [ "$binary_format" = "32" ]; then
     build_args+="-DRISCV32=TRUE "
 else
