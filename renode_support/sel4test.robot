@@ -25,7 +25,7 @@ Prepare Machine
 *** Test Cases ***
 Should Boot seL4
     [Documentation]           Boots seL4 on SiFive Freedom U540 platform.
-    [Tags]                    sel4  uart  interrupts
+    [Tags]                    sel4  uart
     Prepare Machine
 
     Create Terminal Tester    ${UART}
