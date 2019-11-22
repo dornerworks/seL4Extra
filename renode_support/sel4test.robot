@@ -35,3 +35,12 @@ Should Boot seL4
     Wait For Line On Uart   ELF-loader started on (HART 1) (NODES 1)      timeout=120
 
     Provides                  booted-sel4
+
+Should Test There Are Tests
+    [Documentation]           Check for the first test from sel4test
+    [Tags]                    sel4 test uart
+
+    Requires                  booted-sel4
+    Wait For Line On Uart   <testcase classname="sel4test" name="Test that there are tests">    timeout=9999
+
+   Provides                   there-are-tests
