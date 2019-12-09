@@ -13,4 +13,4 @@ else
     $(cd ${resc_path} && ./create-dtb.sh || echo "DTB creation failed, exiting.. " && exit 1)
 fi
 
-${renode_bin} "${resc_path}/sel4test.resc"
+${renode_bin} "${resc_path}/camkes.resc"
